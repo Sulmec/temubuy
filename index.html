@@ -1,32 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TEMU Deals Philippines</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Explore top Temu deals in the Philippines. Join the affiliate program and earn money sharing exclusive offers!" />
+  <title>Earn with TEMU - Affiliate Opportunities in the Philippines</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="https://temu.com/favicon.ico" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Poppins', 'Inter', sans-serif;
       margin: 0;
       padding: 0;
       background: #f9fafb;
       color: #111827;
     }
     header {
-      background: linear-gradient(to right, #ff6b00, #ff922d);
+      background: linear-gradient(to right, #6d28d9, #a855f7);
       color: #fff;
       padding: 30px 20px;
       text-align: center;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     header h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
       margin: 0 0 10px;
+      font-family: 'Poppins', sans-serif;
     }
     header p {
-      font-size: 1rem;
+      font-size: 1.15rem;
+      font-weight: 400;
       margin: 0;
     }
     section {
@@ -34,105 +40,75 @@
     }
     section h2 {
       text-align: center;
-      font-size: 1.5rem;
+      font-size: 1.7rem;
+      font-weight: 600;
       margin-bottom: 20px;
       color: #111;
     }
-    .coupon-section { background-color: #fff7ed; }
-    .gift-section { background-color: #ecfdf5; }
-    .deal-section { background-color: #eff6ff; }
-    .save-section { background-color: #fef9ff; }
-    .affiliate-section { background-color: #ede9fe; }
-    .testimonial-section { background-color: #f3f4f6; }
-    .product-grid {
-      justify-content: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 25px;
+    .affiliate-button {
+      display: none;
     }
-    .product-card {
-      background: white;
-      border-radius: 12px;
-      padding: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      transition: transform 0.2s ease;
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
+      }
+      70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(250, 204, 21, 0);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+      }
     }
-    .product-card:hover {
-      transform: translateY(-5px);
+    @keyframes clickGlow {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(251, 191, 36, 0.8);
+      }
+      50% {
+        transform: scale(1.15);
+        box-shadow: 0 0 20px rgba(251, 191, 36, 0.8);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(251, 191, 36, 0);
+      }
     }
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .product-card h3 {
-      font-size: 1rem;
-      margin: 12px 0 4px;
-      color: #111827;
-    }
-    .product-card p {
-      margin: 0 0 12px;
-      color: #f97316;
-      font-weight: 600;
-    }
-    .product-card a {
-      background: #ff6b00;
-      color: white;
-      text-decoration: none;
-      padding: 10px 16px;
-      border-radius: 6px;
-      display: inline-block;
-      font-weight: 500;
-      transition: background 0.2s;
-    }
-    .product-card a:hover {
-      background: #e45700;
-    }
-    .testimonial-card {
-      background: white;
-      border-left: 4px solid #7c3aed;
-      padding: 16px;
-      font-style: italic;
-      color: #4c1d95;
-      width: 300px;
-      border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 280px;
-    }
-    .testimonial-card img {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .testimonial-container {
-      overflow-x: auto;
-      display: flex;
-      gap: 20px;
-      padding: 0 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      background: #f1f5f9;
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-    @media screen and (max-width: 600px) {
-      .product-grid {
-        grid-template-columns: 1fr;
+    @media (max-width: 768px) {
+      .affiliate-button {
+        display: inline-block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        background: #facc15;
+        color: #1f2937;
+        padding: 14px 20px;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 999px;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        transition: background 0.3s;
+        animation: pulse 2s infinite;
+      }
+      .affiliate-button:active {
+        animation: clickGlow 0.4s ease;
+      }
+      .affiliate-button:hover {
+        background: #fbbf24;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>TEMU Deals for Shoppers in the Philippines</h1>
-    <p>Best prices, free coupons, and real ways to earn!</p>
+    <h1>💰 Join the TEMU Affiliate Program Today!</h1>
+    <p>Make money sharing deals. No experience needed — just your phone!</p>
   </header>
+  <a href="https://temu.to/k/ulnbno3huqd" class="affiliate-button" target="_blank" onclick="new Audio('https://cdn.pixabay.com/download/audio/2022/03/15/audio_fab567d8c1.mp3?filename=button-124476.mp3').play()">🚀 Become an Affiliate</a>
 
   <section class="coupon-section">
     <h2>₱2,000 Coupon Bundle</h2>
