@@ -220,89 +220,108 @@
 </html>
 
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Testimonial Carousel</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    .testimonial-card {
-      background-color: #ffffff;
-      border-radius: 1rem;
-      padding: 1.25rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      max-width: 100%;
-      text-align: center;
-    }
-    .testimonial-card img {
-      width: 72px;
-      height: 72px;
-      border-radius: 9999px;
-      object-fit: cover;
-      margin: 0 auto 1rem;
-    }
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-    }
-  </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
-  <section class="py-10 px-4">
-    <h2 class="text-2xl sm:text-3xl font-bold text-center text-indigo-600 mb-8">What People Are Saying</h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
+<!-- Swiper CSS -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 
-        <!-- 20 Depoimentos -->
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/20.jpg" alt="Mica"><p class="text-sm"><q>I don't have many followers but still earned free credit and cash. TEMU's affiliate game is solid.</q></p><strong class="block mt-2 text-sm font-semibold">– Mica, 20</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jay"><p class="text-sm"><q>Super easy to promote links. I made my first ₱500 in 3 days!</q></p><strong class="block mt-2 text-sm font-semibold">– Jay, 24</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Tina"><p class="text-sm"><q>Perfect side hustle for students like me. I share on TikTok and it pays!</q></p><strong class="block mt-2 text-sm font-semibold">– Tina, 19</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Lance"><p class="text-sm"><q>First week and already hit ₱1,000 in rewards. So worth it!</q></p><strong class="block mt-2 text-sm font-semibold">– Lance, 27</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Ella"><p class="text-sm"><q>I love how TEMU makes earning so effortless. Highly recommend!</q></p><strong class="block mt-2 text-sm font-semibold">– Ella, 23</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Rey"><p class="text-sm"><q>I just post links and get rewarded. Can’t believe how easy it is!</q></p><strong class="block mt-2 text-sm font-semibold">– Rey, 22</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Cam"><p class="text-sm"><q>I only use my phone, but TEMU makes it so easy to earn. Love it!</q></p><strong class="block mt-2 text-sm font-semibold">– Cam, 21</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/40.jpg" alt="Chris"><p class="text-sm"><q>It’s my daily side hustle now. Real rewards with real value.</q></p><strong class="block mt-2 text-sm font-semibold">– Chris, 26</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Nina"><p class="text-sm"><q>Free products, cash, and I don’t even have a large audience!</q></p><strong class="block mt-2 text-sm font-semibold">– Nina, 22</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/28.jpg" alt="Kyle"><p class="text-sm"><q>Was skeptical at first. Now I’ve made over ₱2,000. Legit!</q></p><strong class="block mt-2 text-sm font-semibold">– Kyle, 30</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/18.jpg" alt="Bea"><p class="text-sm"><q>Simple, fun, and rewarding. My friends all signed up too!</q></p><strong class="block mt-2 text-sm font-semibold">– Bea, 20</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/34.jpg" alt="Andre"><p class="text-sm"><q>I use Facebook stories to share links and people click. Easy.</q></p><strong class="block mt-2 text-sm font-semibold">– Andre, 25</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/11.jpg" alt="Kate"><p class="text-sm"><q>It’s like passive income for just sharing. Amazing!</q></p><strong class="block mt-2 text-sm font-semibold">– Kate, 21</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/48.jpg" alt="Josh"><p class="text-sm"><q>Never thought a free app could help me earn this much!</q></p><strong class="block mt-2 text-sm font-semibold">– Josh, 29</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/60.jpg" alt="Mai"><p class="text-sm"><q>Being a TEMU affiliate pays off. Highly recommend to students.</q></p><strong class="block mt-2 text-sm font-semibold">– Mai, 19</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/19.jpg" alt="Rico"><p class="text-sm"><q>Cash + free gifts? Yup, it's real. Thank you TEMU!</q></p><strong class="block mt-2 text-sm font-semibold">– Rico, 23</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/46.jpg" alt="Joan"><p class="text-sm"><q>Helps me buy groceries just by sharing links. Love it!</q></p><strong class="block mt-2 text-sm font-semibold">– Joan, 28</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/21.jpg" alt="Leo"><p class="text-sm"><q>Referral income that’s consistent. TEMU knows what it's doing.</q></p><strong class="block mt-2 text-sm font-semibold">– Leo, 32</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/women/62.jpg" alt="Janelle"><p class="text-sm"><q>I'm telling everyone about this. So worth the time!</q></p><strong class="block mt-2 text-sm font-semibold">– Janelle, 24</strong></div></div>
-        <div class="swiper-slide"><div class="testimonial-card"><img src="https://randomuser.me/api/portraits/men/53.jpg" alt="Drew"><p class="text-sm"><q>I treat it like a mini business. And it pays like one.</q></p><strong class="block mt-2 text-sm font-semibold">– Drew, 27</strong></div></div>
-
+<section class="testimonial-section">
+  <h2 style="text-align:center; margin-bottom: 1rem;">What People Are Saying</h2>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Cada depoimento está dentro de um slide -->
+      <!-- Substitua ou adicione mais depoimentos como abaixo -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Ella">
+          <p>“I love how TEMU makes earning so effortless. Highly recommend!”</p>
+          <strong>– Ella, 23</strong>
+        </div>
       </div>
-      <div class="swiper-pagination mt-4"></div>
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jay">
+          <p>“Super easy to promote links. I made my first ₱500 in 3 days!”</p>
+          <strong>– Jay, 24</strong>
+        </div>
+      </div>
+      <!-- Adicione os outros 18 depoimentos aqui, seguindo o mesmo padrão -->
+      <!-- ... -->
     </div>
-  </section>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    const swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 16,
-      loop: true,
-      centeredSlides: true,
-      grabCursor: true,
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    grabCursor: true,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
       },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+      1024: {
+        slidesPerView: 3,
       },
-    });
-  </script>
-</body>
-</html>
+    }
+  });
+</script>
+
+<style>
+  .testimonial-section {
+    padding: 2rem 1rem;
+    background-color: #f9fafb;
+  }
+
+  .testimonial-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    height: 100%;
+  }
+
+  .testimonial-card img {
+    width: 72px;
+    height: 72px;
+    border-radius: 9999px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card p {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .testimonial-card strong {
+    color: #111827;
+    font-weight: 600;
+  }
+
+  .swiper {
+    padding-bottom: 2rem;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+  }
+</style>
+
 
  
 
