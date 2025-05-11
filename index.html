@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,6 +18,7 @@
       padding: 0;
       background: #f9fafb;
       color: #111827;
+      overflow-x: hidden;
     }
     header {
       background: linear-gradient(to right, #6d28d9, #a855f7);
@@ -35,71 +38,52 @@
       font-weight: 400;
       margin: 0;
     }
-    section {
+    .testimonial-section {
       padding: 40px 20px;
     }
-    section h2 {
+    .testimonial-section h2 {
       text-align: center;
       font-size: 1.7rem;
       font-weight: 600;
       margin-bottom: 20px;
       color: #111;
     }
-    .affiliate-button {
-      display: none;
+    .testimonial-container {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      max-width: 100%;
     }
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.7);
-      }
-      70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(250, 204, 21, 0);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
-      }
+    .testimonial-slider {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
     }
-    @keyframes clickGlow {
-      0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 rgba(251, 191, 36, 0.8);
-      }
-      50% {
-        transform: scale(1.15);
-        box-shadow: 0 0 20px rgba(251, 191, 36, 0.8);
-      }
-      100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 rgba(251, 191, 36, 0);
-      }
+    .testimonial-card {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
     }
-    @media (max-width: 768px) {
-      .affiliate-button {
-        display: inline-block;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 9999;
-        background: #facc15;
-        color: #1f2937;
-        padding: 14px 20px;
-        font-size: 1rem;
-        font-weight: 600;
-        border-radius: 999px;
-        text-decoration: none;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        transition: background 0.3s;
-        animation: pulse 2s infinite;
-      }
-      .affiliate-button:active {
-        animation: clickGlow 0.4s ease;
-      }
-      .affiliate-button:hover {
-        background: #fbbf24;
-      }
+    .testimonial-card img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .carousel-buttons {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .carousel-buttons button {
+      background: #a855f7;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -108,137 +92,32 @@
     <h1>💰 Join the TEMU Affiliate Program Today!</h1>
     <p>Make money sharing deals. No experience needed — just your phone!</p>
   </header>
-  <a href="https://temu.to/k/ulnbno3huqd" class="affiliate-button" target="_blank" onclick="new Audio('https://cdn.pixabay.com/download/audio/2022/03/15/audio_fab567d8c1.mp3?filename=button-124476.mp3').play()">🚀 Become an Affiliate</a>
 
-  <section class="coupon-section">
-    <h2>₱2,000 Coupon Bundle</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>New App User</h3>
-        <p>₱2,000 in coupons just for joining!</p>
-        <a href="https://temu.to/k/utan1occ7k3" target="_blank">Claim Now</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="gift-section">
-    <h2>Free Gifts</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Get Free Items</h3>
-        <p>Fast delivery, easy returns</p>
-        <a href="https://temu.to/k/u0bqrkp93tl" target="_blank">Get Gifts</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="deal-section">
-    <h2>Exclusive Deal</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Special Access</h3>
-        <p>Ultra-low prices inside</p>
-        <a href="https://temu.to/k/uz05b11x391" target="_blank">View Offer</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="save-section">
-    <h2>Save Big</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <h3>Killer Deals</h3>
-        <p>Temu’s treasure trove awaits</p>
-        <a href="https://temu.to/k/utan1occ7k3" target="_blank">Tap to Save</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="affiliate-section" style="background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%); color: white; padding: 3rem 1rem; text-align: center; font-family: 'Poppins', sans-serif;">
-  <h2 style="font-size: 2.75rem; margin-bottom: 1rem; color: #fcd34d; font-weight: 700;">Become a TEMU Affiliate</h2>
-  <div class="product-card" style="max-width: 880px; margin: 0 auto; background-color: #7c3aed; padding: 2.5rem; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
-    <h3 style="font-size: 2rem; margin-bottom: 1rem; color: #fff; font-weight: 600;">💼 Turn Your Social Media into a Money-Making Machine!</h3>
-    <p style="font-size: 1.15rem; margin-bottom: 1rem; line-height: 1.7; color: #e0e7ff;">
-      The <strong>TEMU Affiliate Program</strong> is your gateway to earning real income by simply doing what you already love—sharing cool finds, hot deals, and amazing products. Whether you're a student, content creator, parent, or just someone looking for a new hustle, TEMU makes it easy to monetize your network.
-    </p>
-    <p style="font-size: 1.15rem; margin-bottom: 1rem; line-height: 1.7; color: #e0e7ff;">
-      📲 How does it work? When someone clicks your link and downloads the app or places an order, you earn commission. The more they shop, the more you make. And guess what? It’s free to join—no upfront cost, no hidden fees.
-    </p>
-    <p style="font-size: 1.15rem; margin-bottom: 1rem; line-height: 1.7; color: #e0e7ff;">
-      🔥 Even if you have a small following, your impact can grow fast with the right strategy. TEMU gives you tracking tools, bonuses, and support to succeed. You don’t need to be famous, you just need to start.
-    </p>
-    <ul style="text-align: left; font-size: 1.1rem; margin: 1rem auto 2rem; max-width: 700px; color: #fef9c3; line-height: 1.6;">
-      <li><strong>₱100 Welcome Bonus</strong> – Just for signing up through the affiliate link!</li>
-      <li><strong>₱6,793 Free Credit</strong> – For linking your TikTok, IG, or YouTube accounts</li>
-      <li><strong>Up to 30% Commission</strong> – On each qualifying purchase made through your code</li>
-      <li><strong>Track Your Earnings Live</strong> – In the dedicated affiliate dashboard</li>
-      <li><strong>Weekly Payouts</strong> – Straight to your preferred account</li>
-    </ul>
-    <p style="font-size: 1.25rem; font-weight: 600; margin-bottom: 1.5rem; color: #fffde7;">
-      💡 It’s your time to earn smarter, not harder. Join thousands of affiliates in the Philippines who are already cashing in every week. Start building your digital income today!
-    </p>
-    <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="display: inline-block; background-color: #facc15; color: #1e293b; padding: 1rem 2.25rem; font-size: 1.15rem; font-weight: 700; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.2); transition: background 0.3s ease;">
-      🚀 Join TEMU Affiliate Now
-    </a>
-    <p style="margin-top: 2rem; font-size: 1rem; color: #fff8dc;">
-      👉 Ready to join? Click this link and get started: <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="color: #fde68a; text-decoration: underline;">https://temu.to/k/ulnbno3huqd</a>
-    </p>
-    <p style="margin-top: 0.75rem; font-size: 1rem; color: #e0e7ff;">
-      💥 Don’t wait—this opportunity is perfect for anyone looking to earn extra income with flexibility.
-    </p>
-    <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="display: inline-block; margin-top: 1rem; background-color: #34d399; color: #1e293b; padding: 0.9rem 2rem; font-size: 1.1rem; font-weight: 700; border-radius: 0.75rem; text-decoration: none; box-shadow: 0 3px 10px rgba(0,0,0,0.2);">
-      🔗 Click Here to Become an Affiliate
-    </a>
-  </div>
-</section>
-
+  <!-- Seção de comentários em carrossel -->
   <section class="testimonial-section">
     <h2>What People Are Saying</h2>
     <div class="testimonial-container">
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="Mica">
-        <div><q>I don't have many followers but still earned free credit and cash. TEMU's affiliate game is solid.</q><br><strong>– Mica, 20</strong></div>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jay">
-        <div><q>Super easy to promote links. I made my first ₱500 in 3 days!</q><br><strong>– Jay, 24</strong></div>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Tina">
-        <div><q>Perfect side hustle for students like me. I share on TikTok and it pays!</q><br><strong>– Tina, 19</strong></div>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Lance">
-        <div><q>First week and already hit ₱1,000 in rewards. So worth it!</q><br><strong>– Lance, 27</strong></div>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Ella">
-        <div><q>I love how TEMU makes earning so effortless. Highly recommend!</q><br><strong>– Ella, 23</strong></div>
-      </div>
-      <div class="testimonial-card">
-        <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Rey">
-        <div><q>I just post links and get rewarded. Can’t believe how easy it is!</q><br><strong>– Rey, 22</strong></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-  <p style="font-size: 0.85rem; color: #6b7280; max-width: 600px; margin: 0 auto;">
-    Disclaimer: This site is operated by a Temu Affiliate. I may earn commissions when you click through the links and make purchases. All promotions and offers displayed are sourced from the official Temu platform and subject to their terms.
-  </p>
-  <div style="margin-top: 20px; display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX7dwH////7dQD7cwD7cQD7bwD7awD7bQD7gzD9xab7aQD8oGf9tIz+2sb9yK37gij9zrX/+vX8qHb8om3+5NT8llj+1Lz/9O3+6t78qn38lVP/+PP9u5f8jUP8mlz7eg38r4P7iDj+6d3+3cr7fhz8jEL9uZP9v538kUv8nWP7hzP6XwD8sIb9y7D8p3FM2hIGAAAN7ElEQVR4nO1daWOivBYGslXGBS0VtG5TcWz7tvP/f94lYcsKKdipcHk+tYgxD5wkJ2eL41piGQa7zeGSHJ2fxTG5HDa7IFzadtyxuSkKVolPEATA+2F+FB4AEBGcrD6j2zCMdwsf3QU1CQDhxS7uzHD+7sM7ZJfDg/77vAvD6ETQ/dLL4CFyqpXWGobRyoc/3X8rQP9vDUczww/cD34UEH98meEa9IcfBQTrLzFcbvFPd/nLwNtne4ZrBH66vy0AkPY16hie/J/ubEv4GzuGe/TTPW0NtLdgGB37KKEFwFFZN2SG8R1rMDbwoKzHSQxj0m+CKUUS1zGMyU938AaQKAoMo56LaAYPRkaGxyEQTCkeTQz3fZ5FeYC9nuGmv+ugDHTSMZz1VZPRwZ+pDJfDeYMUaKkw3A5lEGYAW5nhun/bpXrgtcRwWG+QAogMP/q1o7cB/OAZRkOTUQoccQxXw3uF6UtcVQyjIS2FFfyoZHga4itMX+KpZDiEPZMOpGA4H5Y6UwHNc4bvw9g0qfDeM4bxMOcZCj9mDHfDnGco4I4xXAxVSFMxXVCGg9RnCqR6jeMGQ51JKVCQMlwNb1tRAaxShslwh2E6EBPXWQ53raDwl044VJUtAwmdQU80dKpxBrzeU8CdsxnyVJpOphvnMHCGB+cy5MUiXS72TvLTffhmLJyfjhf9bgyd34gRI0aMGDFixIgRI0aMuB0ggrwtB0DUy3QMM9BusvubFElQCL9+XCePOhMkxJh0p47MbQAAOYBbPWbwi0WlxBvs0eyiydIUJIan0TJcdfUR4Mlsj3XGMYjh6+OGw+qQ4JsIEznn8WHxEaBDEfCnxqf4Afvgxetku2NRPuFvxdOAvD+abNHnQP80vgZcBmounV9l22vZF4Cvxa86XX4TZo3MxY6DsnUF4UNnrwSqWuOeouzPQavyoy4+Zep3zxpJOPmDD3VJotOuA4Nom52JDMFv7rPP9t4sv6KyKCnCrfLzAoKOFLE2W/oqjkMkZMe3jvln8S85loWcgks9QSrTnRiWgiPgtzBO/LPw4Uvbhwr5XNdCTEBzbYG/3fxnQNPkWXhqaCp9fJJHP7R7q2KKZOZvwKbsVx7dJlT4V21RMJXzspXjXWDkodPKamyKI4KFUHi/LQh2jczDn3KDW0EqfHWkPvM3gOQ57YMNRSwIJGPIvdbZRCgTIfzb0c1LpJEgxvVDXaI4NxTRA/u6VeSV0MYD/QYu//3wEeEm9mn6b/XhphtFNJFeoSCDMv8M50yRBQjng3TSLEjglW9hSZ8jeKooQZ4ve8OweujdxBSuXAFit365WkS/fOyTp0nB36IPQPidM5Vr+Kf8nz4iEpb/pvOQ91D9WscFo44hNCpUbsQnyF+b5UhcmOg7c1A1B7xgPhNmnfKHXOp2t5gZablzP/jXAST6JliEXomLBVtyyUxsgeQyH1P6fvVGu2XEwEe5t8LHxKoOzs5ioAiLRRarRbiHyyY4sk1pRTv6yoQsw07OeqRMJTNe6j3HgqJV6h/mv8GGoUiaLVKAYJLNYpj/3S4BF0RZDl1XCFHxSLY1dONQvTNDaEMQCBr2FSks3AU/lrkUQ7lHX4NW8X0WBzbe0o5c/zO+TKsiTOKilKXx+GI723LfCKH4OB/bM9RoLJSNtHvCi9+IJCaCdsmNxdZpFlZfQVJD6wQjCNOlX1Yz2qemIUNpG1lF8bw8RUWLwGIyB7mJ5M1nc2S+e1GaiufT03WmXO4Qnmfos2ZkkbPh3hQWM2kuLFOScWXKPY1Et0Nr3RurTyuHmu4mSxSP5swqlC3fTKGl2hi7KOpxdWgbRAoO5jblPkNdcZgCjdlxIH9bTPrpDJpdfbNleG6p1GB9YaLsqUmqoP9S14O3+rkGHLNFN5vBqPrJLsv6ohktQ52JWed0K3OMhzGQNAxND7BDpOJhIN3+QI+ZuMklI5ivQlRXyxjK1gMj4laqd8M4z/V57xJFB+LgmnmG4jcIl9yUntLbTmh5x3iPUWkOzd90xfBPbZtqZ74I36ijZJiy0c12NFNfeoWKpnemq10hqtB/rbTsYFqMhUK3owzZXFqzAEl4aSOlzYOA9SLb4Kx5xeBz7/u+s1J0hbxuAzTVASx+mTJkqrRXL/ocWs2lOiObiMzkhiT5fDlm7iPoS6NoyewSwP8w2AdLjxZdWdm9kuWmBr9aaG01W9sSmeLhC3eGfqnuYIHii8cmlVeT9vpZDiUq+NlmAVl0guK5zTBEQXPDxczwxF3jtWxeqb2yQYaNcwdnvKJ7ptesaXXrpoXWodkEoGx8VRSiAWA5cawxRoi5MBHCfsknvrCpwKwWRNxAostwvh2y02rktdkS9ashBbdlwJdy4o3X1+nH6WM6qWaf542fvxKTBfuFL5RK9b8ipQ7VqFUF1m3dCORSu1wEnuDex3uTDhtvuLVev2xOhD7SbVi5dsKHWmUpxam9oQ3gV1Ovl/NEXoEAcabqI4nmF0GXwYs/M3mumYlOX2YkreyrHn5amw0l4RR2sgYD4m1mymCPPt+wtvwuxODX5Fx05zn83Cx8+UYPEoweto+nP9fJ/DMIritHKoMHDutgzW9pAcIEaAF90j1vK+1Q8jadr89hinMwOW29uggBqm0S75gkTtotZCoA57G4CsSgtgXSq/844YwW0M6AkJ2nbNi5RiNGjBgxYsSInsGrgf2tmjvrf/JLXfzKzRIQWTzUIOH2DB6BNXc6GMitAoNtDBL6BY+PvoR4kZjOaaC/C1vXr0Ya16iA53JjBhKjf4MhfkVyqzOtelt4zcJLSQnvlnQLrd0DggXdbp4X7ZyHyMJ5nQdaWriICqt+1arOL8wZMHM7TWlpnmheehlv9tDmLaKm81sYMjsGbtqFu4V/jffzKvF9jsMVcc6tZ5VN+FV9UaWXv5VNX/IvG8DigLjIHTMyu4sQQKUEoAhG9swURcqHp9p8OXtxq5JzVgyZMd0UFiUgd9Lyl2Q5FQ1x0yzgonwkqneJC+Vp48bXRz/LOFsznKoMFTnVfKGOIezIsMEtw3XDiuFC55cXisBLjqBvZ9gcXp0iYr9qw7CIVRCv8nIqG4u/naEDn9wmxNk7sGBYGqWl67ycSh99P0MHwM2kQGX+jq/ltUPebY7hbKLDn/eydzL1cj5VnJX/gCHNWitQrR0zv7hWGt04hiuMNOBsijLDQk5VZ+U/YVihmllnqm7BM2wyc8o8SjlVPhgMw0xO5RDWQTGkcqpzqA+HIZNTzeU7ZfjX18wzDQzdRCOjd8swXCsIVvwOtWqn4hJy62nlQb1ThlpEiWa1mGtjWcJKk+oTQ/e50lzKa8F/OtF0xAyS3jAsNhYCQ6KJ13kkfWV4VrW2AKmK7xqDvjIMdQwdLBlKnomc59Qfhp/lQOQZSrkGNJyztwwrW5jAEAgGHho921eGJ91cSq/x+bWsvH8/GYZP3FdEhvyukC2aKsMyDluNIOWsAv9Qa8NQhlgORGJYXcg0WpVhOVTVKGAugrj7eVy317xzhjCPxs/DgxWGlb1UTTHkoidbGb3/DUMHsRDIwo6jMqz0VyV5i6vA0L1k9/cxdCB6ejsWjSoMuThe+eA0LpH9Buc7fCNDWlmn+lNmyF1wJRcTt+e6Qdl1e4YNHtKGTikMedt7JDgKMWdfbRPl3ZLhKVloACsP6dcZcjG3sVN+Cfh8osINzgboqNO87Avp/TJD0fa+O2KCECL4wDv0LHL9v5thNRF+maGcjBPNPudryXp8k2pRXRkuZbOoNUPPnJqao2PJiBsxdP+Clgwbc3dax7HfmKHsIbVnWJOjQRHe5qyjSsXX1LcADYWcuA5XtTr0swO3inOyh2sSvG51gGqVJ6HT4m38xZnmWPldn/TTQ+Xo56skoIspMKRzCbwC5XB/0T0yiyS63ENa5mGaahCUg06sGAbwRsfx2i0TQfzlV/ZwQ/2Trx8pLidLKBuzobFneTaYInzQ3wolhtzn9SO56Rk5AK3m161J6FEynZtxvVQvBDrTYPJUM3hQsgsme42WAhB2nk7X+WfweZ2+JbcoQ6n8Ql0hRqg6LHQe0uzO2r556Q2m7R7IkzQsi4eNGDFixIgRI0aMGDFixAhrDP18wOP/wRmWwz+HdPhnyQ7/PODhn+k8/HO5h3+2+vJWhv/7hL90bApt9xde4jplUa1BAqxShoOealCQMrxBPNH9AkcpQ7uTJ/oJmkbvdCoUfe+gpy04eXDuMEErU9LgiFbJ7H0Aq7lAGXY8aed+wepCsACXoSpuLEaEMWyumN5LZCEijGFjxfR+IouSzsKwGkN7+4g8NCdjOEi9Jk9kyEPp2h+AcbcozhIrggWHt8Eo0hsLhrcK8bsblKcKlgGf3fNq7gpVRGjJcDksxaaqdM6ljw9pUeQOg+JKAGhqb/UViAt45YsctD4D9t4gnJcilHE4DmMb5R1dE8PIVH67V/BgZGToxkPYRxHxbBSp2Ejcuo7kvcCTCMoM3bjngupB+XQbpWBMdOzzjAqOStKCpiTOvr/rItKcLaQta9RX7cbXZbZoyxrN6tMF7hQAaQvh6ot4Lo2pI/cLvNUfK2QqU7oG/RqNEJjO6DEXYv0w1V++Q0BsOEy0lqEbrfx+cIT+qqaqc20x3ehEjBlI9wIPmc6ps2GYYv7u37GW40H/valmdXNB5Hi3wMjqyOJ/Cw8gvNhpTyv+IsMUUbBKfIIguAui9CQlRHCyCqzOPLcrap1iGQa7zWG/+Ol41ONif9jsgtD2YET3f9ZCvvgYm+3AAAAAAElFTkSuQmCC" alt="Temu logo" title="Temu Official Logo" style="height: 36px;">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRc_Yf62QiIEHSePhx2P_D-8AOiBhH9EvYww&s" alt="Secure Site" title="SSL Secure" style="height: 36px;">
-    <img src="https://aimg.kwcdn.com/upload_aimg/affiliate/1e397656-48b4-43e9-b9b6-7d643c7069ca.png" alt="Verified Temu Affiliate" title="Verified Affiliate" style="height: 36px;">
-  </div>
-  <div style="margin-top: 10px; font-size: 0.95rem; color: #f97316; font-weight: 600; display: flex; justify-content: center; align-items: center; gap: 8px;">
-    <i class="fa-solid fa-bolt"></i>
-    <em>As seen on TEMU · Join the trend · Trusted by smart shoppers across PH</em>
-  </div>
-</footer>
-
-  <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: #ff6b00; color: white; padding: 14px 20px; border-radius: 9999px; font-weight: bold; text-decoration: none; box-shadow: 0 4px 12px rgba(0,0,0,0.2); z-index: 999;">
-    💼 Become a TEMU Affiliate
-  </a>
-</body>
-</html>
+      <div class="testimonial-slider" id="testimonialSlider">
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/20.jpg" alt="Mica">
+          <div><q>I don't have many followers but still earned free credit and cash. TEMU's affiliate game is solid.</q><br><strong>– Mica, 20</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/31.jpg" alt="Jay">
+          <div><q>Super easy to promote links. I made my first ₱500 in 3 days!</q><br><strong>– Jay, 24</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Tina">
+          <div><q>Perfect side hustle for students like me. I share on TikTok and it pays!</q><br><strong>– Tina, 19</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Lance">
+          <div><q>First week and already hit ₱1,000 in rewards. So worth it!</q><br><strong>– Lance, 27</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/women/52.jpg" alt="Ella">
+          <div><q>I love how TEMU makes earning so effortless. Highly recommend!</q><br><strong>– Ella, 23</strong></div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://randomuser.me/api/portraits/men/73.jpg" alt="Rey">
+          <div><q>I just post links and get rewarded. Can’t believe how easy it is!</q><br><strong>– Rey,
