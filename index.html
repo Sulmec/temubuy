@@ -90,116 +90,139 @@
       font-size: 0.9rem;
       color: #6b7280;
     }
+      @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      header p {
+        font-size: 0.95rem;
+      }
+      section {
+        padding: 30px 16px;
+      }
+      section h2 {
+        font-size: 1.25rem;
+      }
+      .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .product-card {
+        padding: 14px;
+      }
+      .product-card h3 {
+        font-size: 0.95rem;
+      }
+      .product-card p {
+        font-size: 0.95rem;
+      }
+      .product-card a {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+      }
+      footer {
+        font-size: 0.85rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🔥 Hot Deals from TEMU Philippines</h1>
-    <p>Get the best products at discount prices – limited-time coupons!</p>
-  </header>
+
+    
 
   <section>
-    <h2>🎁 Special Coupon</h2>
-    <div class="product-grid" style="max-width: 600px;">
-      <div class="product-card" style="background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px solid #f59e0b; text-align: center; padding: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-        <h3 style="font-size: 1.5rem; color: #b45309; margin-bottom: 0.5rem;">🎉 ₱2,000 Coupon Bundle</h3>
-        <p style="color: #6b7280; margin-bottom: 1rem;">New App User</p>
-        <a href="https://temu.to/k/utan1occ7k3" target="_blank" style="background: #b45309; padding: 12px 20px; font-size: 1rem; border-radius: 8px;">Claim Now</a>
+    <h2>🔥 Exclusive ₱2,000 Coupon Pack</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 30px; background: linear-gradient(135deg, #fef9c3, #fde047); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      <p style="font-size: 1.2rem; color: #92400e; margin-bottom: 1rem;">
+        ⭐️ Get Your ₱2,000 Coupon Bundle Now!<br>
+        💰 Claim directly in the app or join and earn with me!
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
+        <a href="https://temu.to/k/utan1occ7k3" target="_blank" style="background: #f59e0b; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🎁 Click to Get ₱2,000 Coupons</a>
+        <a href="https://app.temu.com/m/m9x81k9gqcx" target="_blank" style="background: #fb923c; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">📲 Open Directly in the App</a>
+        <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="background: #f97316; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🤝 Earn with Me</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>🍳 Kitchen Gadgets</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4015940fe6ba74cb1d71002d7b113eec.jpg?imageView2/2/w/800/q/70" alt="Mini Garlic Chopper">
-        <h3>Mini Garlic Chopper</h3>
-        <p>Only ₱25</p>
-        <a href="https://temu.to/k/uies05tid3l" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/f04f21f6-b0b8-465d-87bf-3f6309469a5b.jpg?imageView2/2/w/800/q/70" alt="2-in-1 Mini Bag Sealer & Cutter">
-        <h3>2-in-1 Mini Bag Sealer & Cutter</h3>
-        <p>Only ₱180</p>
-        <a href="https://temu.to/k/u1xzd4gj0od" target="_blank">Buy Now</a>
+    <h2>🎁 Free Gifts for You</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 30px; background: linear-gradient(135deg, #e0f2fe, #bae6fd); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      <p style="font-size: 1.2rem; color: #0369a1; margin-bottom: 1rem;">
+        🔥 Hot deals just a click away! Enjoy free gifts, free shipping and free returns within 90 days!
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
+        <a href="https://temu.to/k/u0bqrkp93tl" target="_blank" style="background: #0284c7; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🎁 Get Free Gifts</a>
+        <a href="https://app.temu.com/m/mwgluc128f7" target="_blank" style="background: #0ea5e9; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">📲 Open in the App</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>👜 Bags & Accessories</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/b14f4a5e-da36-497d-8584-5cbd798113a6.jpg?imageView2/2/w/800/q/70" alt="Minimalist Canvas Tote Bag">
-        <h3>Minimalist Canvas Tote Bag</h3>
-        <p>Only ₱203</p>
-        <a href="https://temu.to/k/uw3kgmffzg2" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/open/2024-09-19/1726717181822-a2ee0faa4169451fb922aa8377b18056-goods.jpeg?imageView2/2/w/800/q/70" alt="Canvas Tote - Read a Book">
-        <h3>Canvas Tote - Read a Book</h3>
-        <p>Only ₱188</p>
-        <a href="https://temu.to/k/unqr6lwwpwu" target="_blank">Buy Now</a>
+    <h2>🛍️ Exclusive Deal Just for You</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 30px; background: linear-gradient(135deg, #fef2f2, #fecaca); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      <p style="font-size: 1.2rem; color: #991b1b; margin-bottom: 1rem;">
+        ⭐️ Tap the exclusive deal link to score top-quality items at ultra-low prices. 🛍️ These unbeatable deals are only available here. Shop now and save big!
+      </p>
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 400px; margin: 0 auto;">
+        <a href="https://temu.to/k/uz05b11x391" target="_blank" style="background: #dc2626; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🛍️ Access Exclusive Deal</a>
+        <a href="https://app.temu.com/m/mo55usmecy7" target="_blank" style="background: #ef4444; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">📲 Open in the App</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>👚 Clothing & Accessories</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/0e7d4898-c6b6-458e-8652-c64215441819.jpg?imageView2/2/w/800/q/70/format/webp" alt="Women's Y2K Crop Top">
-        <h3>Women's Y2K Crop Top</h3>
-        <p>Only ₱130</p>
-        <a href="https://temu.to/k/u1kzr2nh1v4" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/df2m/7f83ed35-6541-40d6-8eb4-b2b68ee6e92a.jpg?imageView2/2/w/800/q/70/format/webp" alt="Women's Sports Tank Top">
-        <h3>Women's Sports Tank Top</h3>
-        <p>Only ₱132</p>
-        <a href="https://temu.to/k/uq4lesfjgrn" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/c7955608-f35c-450f-82f1-5c726404924d.jpg?imageView2/2/w/800/q/70/format/webp" alt="Women's Athletic Tank Top">
-        <h3>Women's Athletic Tank Top</h3>
-        <p>Only ₱145</p>
-        <a href="https://temu.to/k/u5jwa3n0pz9" target="_blank">Buy Now</a>
-      </div>
+    <h2>💰 Save Big on Your Next Purchase</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center; padding: 30px; background: linear-gradient(135deg, #ecfccb, #bef264); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      <p style="font-size: 1.2rem; color: #365314; margin-bottom: 1rem;">
+        🌟 Tap into Temu’s treasure trove! Click for killer deals and mega savings!
+      </p>
+      <a href="https://temu.to/k/utan1occ7k3" target="_blank" style="background: #65a30d; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🎉 Unlock Savings Now</a>
     </div>
   </section>
 
   <section>
-    <h2>Make Up</h2>
-    <div class="product-grid">
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/7e0f5a80-75df-4bd7-8796-8e0fb15801af.jpg?imageView2/2/w/800/q/70/format/webp" alt="O.TWO.O Eyeliner Stamp">
-        <h3>O.TWO.O Eyeliner Stamp</h3>
-        <p>Only ₱140</p>
-        <a href="https://temu.to/k/u9d7jffkv2c" target="_blank">Buy Now</a>
+  <h2>🚀 Become a TEMU Affiliate Today</h2>
+  <div style="max-width: 800px; margin: 0 auto; text-align: left; padding: 30px; background: linear-gradient(135deg, #ede9fe, #c4b5fd); border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); font-size: 1.05rem; line-height: 1.7; color: #4c1d95;">
+    <p><strong>Wanna make real money from your phone? TEMU’s affiliate program is 🔥 for that.</strong></p>
+    <p>Earn up to <strong>30% commission</strong> just by sharing your link. No product handling, no customer service. Just post, share, and watch the money roll in. 🙌</p>
+    <p>Get started with a <strong>₱100 bonus</strong> instantly when you sign up using <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="color: #6d28d9; font-weight: 600; text-decoration: underline;">this link</a>.</p>
+
+    <p style="text-align: center; margin: 30px 0;">
+      <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="background: #7c3aed; color: white; font-weight: bold; font-size: 1.1rem; padding: 16px 28px; border-radius: 8px; text-decoration: none;">💸 Become an Affiliate Now</a>
+    </p>
+
+    <h3 style="color: #4c1d95;">🔥 New Affiliate Perks</h3>
+    <ul style="padding-left: 1.2em;">
+      <li><strong>₱100 Welcome Bonus:</strong> Instantly added to your account when you join using <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="color: #6d28d9; font-weight: 600; text-decoration: underline;">my invite link</a>.</li>
+      <li><strong>₱6,793 in Free Credit:</strong> Link your TikTok, IG, or YouTube and score bonus credit based on your followers & engagement.</li>
+      <li><strong>Up to 30% Commissions:</strong> You earn on purchases made through your link in the first 24h after download. Easy win 💸</li>
+    </ul>
+
+    <h3 style="color: #4c1d95; margin-top: 40px;">📣 What People Are Saying</h3>
+    <div style="overflow-x: auto; white-space: nowrap; padding: 10px 0;">
+      <div style="display: inline-block; vertical-align: top; background: #ede9fe; border-left: 4px solid #7c3aed; padding: 16px; margin-right: 20px; font-style: italic; color: #4c1d95; width: 300px; border-radius: 8px;">
+        “Didn’t think I’d make cash this fast. I shared my link on IG stories and boom — ₱3,000 in a week!”<br><strong>– Jam, 23</strong>
       </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/8de70f98-2f7f-4921-9f45-e22fe3b67854.jpg?imageView2/2/w/800/q/70/format/webp" alt="O.TWO.O 3-in-1 Eyebrow Pencil">
-        <h3>O.TWO.O 3-in-1 Eyebrow Pencil</h3>
-        <p>Only ₱164</p>
-        <a href="https://temu.to/k/urkk0sbwwew" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/a54e5db9-1345-474e-bc9e-a0b9063cdc18.jpg?imageView2/2/w/800/q/70/format/webp" alt="O.TWO.O Blush & Lip Gloss">
-        <h3>O.TWO.O Blush & Lip Gloss</h3>
-        <p>Only ₱184</p>
-        <a href="https://temu.to/k/uh8tawta6x0" target="_blank">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://img.kwcdn.com/product/fancy/09736ce9-905b-484a-89de-6a25af67245c.jpg?imageView2/2/w/800/q/70/format/webp" alt="O.TWO.O Lip Gloss Set">
-        <h3>O.TWO.O Lip Gloss Set</h3>
-        <p>Only ₱190</p>
-        <a href="https://temu.to/k/u7s5uavx52b" target="_blank">Buy Now</a>
+      <div style="display: inline-block; vertical-align: top; background: #ede9fe; border-left: 4px solid #7c3aed; padding: 16px; font-style: italic; color: #4c1d95; width: 300px; border-radius: 8px;">
+        “I don’t have many followers but still earned free credit and cash. TEMU’s affiliate game is solid.”<br><strong>– Mica, 20</strong>
       </div>
     </div>
-  </section>
 
-  <footer>
+    <h3 style="color: #4c1d95; margin-top: 40px;">🤔 FAQs</h3>
+    <ul style="padding-left: 1.2em;">
+      <li><strong>Do I need to sell stuff?</strong><br>Nope. Just share your link and you earn when people buy.</li>
+      <li><strong>Is it free to join?</strong><br>Yes, 100% free. No fees ever.</li>
+      <li><strong>When do I start earning?</strong><br>You can earn on day one if someone clicks and buys through your link.</li>
+    </ul>
+
+    <p style="text-align: center; margin-top: 40px;">
+      <a href="https://temu.to/k/ulnbno3huqd" target="_blank" style="background: #6d28d9; color: white; font-weight: bold; font-size: 1rem; padding: 14px 24px; border-radius: 8px; text-decoration: none;">🚀 Join TEMU Affiliates Now</a>
+    </p>
+  </div>
+</section>
+
+<footer>
     <p>Prices valid while supplies last. All items from official TEMU store.</p>
   </footer>
 </body>
